@@ -6,13 +6,17 @@ L'application accepte un ou plusieurs fichiers de données aux formats CSV ou JS
 L'application utilise la librairie [RDFLib](https://rdflib.readthedocs.io/) qui propose d'autres formats de sortie.
 ## Fonctionnement
 L'application procède en 4 étapes:
-1. Rassembler et scanner les données à transformer
-2. Paramétrer le modèle sémantisation
-3. Produire l'ontologie
-4. Produire une KB, base de connaissances sémantique
+1. Scan des données à transformer
+2. Paramétrage du fichier de modélisation sémantique
+3. Production de l'ontologie
+4. Production d'une base de connaissances (KB) contenant les données scannées
 ```mermaid
 graph LR
-Scan --> Config --> Ontology --> KB;
+A(Init project) -- "-s" --> B(Scan)
+B -- -l --> C(Config loopmode)
+C -- -o --> D(Ontology)
+D -- -k --> E(KB)
+C --> C
 ```
 ## Pré-requis
 * Pour utiliser depuis le code source: Python 3.8+
