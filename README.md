@@ -1,11 +1,15 @@
 # Ontology Prototyper
 Ce projet est le fruit d'une collabration avec l'entreprise [Perfect Memory](https://www.perfect-memory.com/), spécialiste du déploiement de solutions sémantiques.
 ## Objectifs
-Cette application a pour objectifs de simplifier la production d'une base de connaissances et d'une ontologie depuis une base de données non sémantique comme des exports SQL ou JSON.
-L'application accepte un ou plusieurs fichiers de données aux formats CSV ou JSON. Elle produit par défaut un fichier TTL pour l'ontologie et un fichier TTL pour la KB.
-L'application utilise la librairie [RDFLib](https://rdflib.readthedocs.io/) qui propose d'autres formats de sortie.
+Cette application a pour objectif de simplifier la production d'une ontologie et d'une base de connaissances à partir de données existantes aux formats CSV ou JSON.
+
+
 ## Fonctionnement
-Pour initier le projet, rassembler les fichiers de données et créer un fichier de configuration vierge.
+L'application analyse un ou plusieurs fichiers de données pour construire un fichier de paramètres spécifiques.
+Une fois les paramètres finalisés par l'utilisateur, l'application produit un fichier d'ontologie et un fichier contenant la KB.
+
+Pour initier le projet, rassembler les fichiers de données et créer un fichier de configuration.
+
 Ensuite l'application procède en 4 étapes:
 1. Scan des données à transformer: pour chaque fichier l'application identifie toutes les colonnes et leur type de données puis renseigne le fichier de configuration.
 2. Paramétrage du fichier de modélisation sémantique : l'application alimente de façon continue un journal d'erreurs à résoudre. Une fois que tous les paramètres obligatoires sont correctement définis, l'application rend la main pour les étapes suivantes.
@@ -19,6 +23,8 @@ C -- -o --> D(Ontology)
 D -- -k --> E(KB)
 C --> C
 ```
+L'application produit par défaut des fichiers au format turtle (.ttl) mais utilise la librairie [RDFLib](https://rdflib.readthedocs.io/) qui propose d'autres formats de sortie.
+
 ## Pré-requis
 * Pour utiliser depuis le code source: Python 3.8+
 * L'application peut être packagée en exécutable autonome grâce à PyInstaller, un fichier `prototype.spec` est fourni. Dans le cas d'une utilisation packagée, aucune connaissance en programmation n'est nécessaire.
@@ -33,3 +39,5 @@ C --> C
 * Analyse récursive des documents JSON
 * Import par lot pour les gros fichiers CSV avec filtrage des clés primaires
 * Dispatching des données dans des entités ou des classes
+* Formats de sortie : turtle, rdf+xml, n3, etc. [liste](https://rdflib.readthedocs.io/en/stable/plugin_serializers.html)
+
