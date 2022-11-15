@@ -39,5 +39,5 @@ L'application produit par défaut des fichiers au format turtle (.ttl) mais util
 * Analyse récursive des documents JSON
 * Import par lot pour les gros fichiers CSV avec filtrage des clés primaires
 * Dispatching des données dans des entités ou des classes
-* Formats de sortie : turtle, rdf+xml, n3, etc. [liste](https://rdflib.readthedocs.io/en/stable/plugin_serializers.html)
+* Formats de sortie : turtle, rdf+xml, n3, etc. [consulter la liste](https://rdflib.readthedocs.io/en/stable/plugin_serializers.html)
 
