@@ -73,170 +73,79 @@ Le fichier clients.csv
 
 Vidéo: [Scan des données source](https://youtu.be/noUJ9Vtn-gU)
 
-"tables": {
-
-"sources\\\clients.csv": {
-
-"columns": {
-
-"CLIENT_A\_PROSPECTER": {
-
-"column_type": "CT_IGNORE or CT_PRIMARY_KEY or
-CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or
-CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or
-CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
-
-"info_data_diversity": 2,
-
-"info_data_values_set": "{0, 1}",
-
-"info_sample_data": 1,
-
-"xsd_type": "xsd:boolean"
-
-},
-
-"CLIENT_FONCTION": {
-
-"column_type": "CT_IGNORE or CT_PRIMARY_KEY or
-CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or
-CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or
-CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
-
-"info_data_diversity": 4,
-
-"info_data_values_set": "{'Achats', 'Direction', 'Chefferie de projet',
-'Chefferie de service'}",
-
-"info_sample_data": "Achats",
-
-"xsd_type": "xsd:string"
-
-},
-
-"CLIENT_GENRE": {
-
-"column_type": "CT_IGNORE or CT_PRIMARY_KEY or
-CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or
-CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or
-CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
-
-"info_data_diversity": 2,
-
-"info_data_values_set": "{'M', 'Me'}",
-
-"info_sample_data": "M",
-
-"xsd_type": "xsd:string"
-
-},
-
-"CLIENT_ID": {
-
-"column_type": "CT_IGNORE or CT_PRIMARY_KEY or
-CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or
-CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or
-CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
-
-"info_data_diversity": 5,
-
-"info_data_values_set": "{1, 2, 3, 4, 5}",
-
-"info_sample_data": 1,
-
-"xsd_type": "xsd:integer"
-
-},
-
-"CLIENT_NOM": {
-
-"column_type": "CT_IGNORE or CT_PRIMARY_KEY or
-CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or
-CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or
-CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
-
-"info_data_diversity": 5,
-
-"info_data_values_set": "{'HENNE', 'REPERE', 'CROCHE', 'BONBEUR',
-'HADIT'}",
-
-"info_sample_data": "HADIT",
-
-"xsd_type": "xsd:string"
-
-},
-
-"CLIENT_PRENOM": {
-
-"column_type": "CT_IGNORE or CT_PRIMARY_KEY or
-CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or
-CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or
-CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
-
-"info_data_diversity": 5,
-
-"info_data_values_set": "{'Paul', 'Jean', 'Jacques', 'Marc', 'Sarah'}",
-
-"info_sample_data": "Paul",
-
-"xsd_type": "xsd:string"
-
-},
-
-"CLIENT_SOCIETE_ID": {
-
-"column_type": "CT_IGNORE or CT_PRIMARY_KEY or
-CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or
-CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or
-CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
-
-"info_data_diversity": 2,
-
-"info_data_values_set": "{1, 2}",
-
-"info_sample_data": 1,
-
-"xsd_type": "xsd:integer"
-
-}
-
-},
-
-"data_options": {
-
-"CSV_SEPARATOR": ";",
-
-"limited_primary_keys_list": null,
-
-"specific_skipped_values": \[\],
-
-"stop_on_duplicate_primary_key": true
-
-},
-
-"table_name": "clients",
-
-"table_type": "TT_CLASS",
-
-"table_type_parameters": {
-
-"table_class_labels": {
-
-"en": "Clients",
-
-"fr": "Clients"
-
-},
-
-"table_class_name": "Clients",
-
-"table_class_subclass_of": \[\]
-
-}
-
-}
-
-}
+```
+	"tables": {
+		"sources\\clients.csv": {
+			"columns": {
+				"CLIENT_A_PROSPECTER": {
+					"column_type": "CT_IGNORE or CT_PRIMARY_KEY or CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
+					"info_data_diversity": 2,
+					"info_data_values_set": "{0, 1}",
+					"info_sample_data": 1,
+					"xsd_type": "xsd:boolean"
+				},
+				"CLIENT_FONCTION": {
+					"column_type": "CT_IGNORE or CT_PRIMARY_KEY or CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
+					"info_data_diversity": 4,
+					"info_data_values_set": "{'Achats', 'Direction', 'Chefferie de projet', 'Chefferie de service'}",
+					"info_sample_data": "Achats",
+					"xsd_type": "xsd:string"
+				},
+				"CLIENT_GENRE": {
+					"column_type": "CT_IGNORE or CT_PRIMARY_KEY or CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
+					"info_data_diversity": 2,
+					"info_data_values_set": "{'M', 'Me'}",
+					"info_sample_data": "M",
+					"xsd_type": "xsd:string"
+				},
+				"CLIENT_ID": {
+					"column_type": "CT_IGNORE or CT_PRIMARY_KEY or CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
+					"info_data_diversity": 5,
+					"info_data_values_set": "{1, 2, 3, 4, 5}",
+					"info_sample_data": 1,
+					"xsd_type": "xsd:integer"
+				},
+				"CLIENT_NOM": {
+					"column_type": "CT_IGNORE or CT_PRIMARY_KEY or CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
+					"info_data_diversity": 5,
+					"info_data_values_set": "{'HENNE', 'REPERE', 'CROCHE', 'BONBEUR', 'HADIT'}",
+					"info_sample_data": "HADIT",
+					"xsd_type": "xsd:string"
+				},
+				"CLIENT_PRENOM": {
+					"column_type": "CT_IGNORE or CT_PRIMARY_KEY or CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
+					"info_data_diversity": 5,
+					"info_data_values_set": "{'Paul', 'Jean', 'Jacques', 'Marc', 'Sarah'}",
+					"info_sample_data": "Paul",
+					"xsd_type": "xsd:string"
+				},
+				"CLIENT_SOCIETE_ID": {
+					"column_type": "CT_IGNORE or CT_PRIMARY_KEY or CT_DATATYPE_PROPERTY_VALUE or CT_DATATYPE_PROPERTY_KEY or CT_OBJECT_PROPERTY_VALUE or CT_OBJECT_PROPERTY_KEY or CT_CLASSES_LIST_KEY or CT_JSON_EXPAND or CT_JSON_STRUCT",
+					"info_data_diversity": 2,
+					"info_data_values_set": "{1, 2}",
+					"info_sample_data": 1,
+					"xsd_type": "xsd:integer"
+				}
+			},
+			"data_options": {
+				"CSV_SEPARATOR": ";",
+				"limited_primary_keys_list": null,
+				"specific_skipped_values": [],
+				"stop_on_duplicate_primary_key": true
+			},
+			"table_name": "clients",
+			"table_type": "TT_CLASS",
+			"table_type_parameters": {
+				"table_class_labels": {
+					"en": "Clients",
+					"fr": "Clients"
+				},
+				"table_class_name": "Clients",
+				"table_class_subclass_of": []
+			}
+		}
+	}
+```
 
 Le scan du fichier source a provoqué la création d'une section de table
 avec une liste des colonnes rencontrées. Pour chaque colonne, il crée
@@ -250,47 +159,29 @@ dédiée au type de colonne :
 
 Pour la section des paramètres de la table :
 
-"tables": {
-
-"sources\\\clients.csv": {
-
-"columns": {... },
-
-"data_options": {
-
-"CSV_SEPARATOR": ";",
-
-"limited_primary_keys_list": null,
-
-"specific_skipped_values": \[\],
-
-"stop_on_duplicate_primary_key": true
-
-},
-
-"table_name": "clients",
-
-"table_type": "TT_CLASS",
-
-"table_type_parameters": {
-
-"table_class_labels": {
-
-"en": "Clients",
-
-"fr": "Clients"
-
-},
-
-"table_class_name": "Clients",
-
-"table_class_subclass_of": \[\]
-
-}
-
-}
-
-}
+```
+	"tables": {
+		"sources\\clients.csv": {
+			"columns": {...	},
+			"data_options": {
+				"CSV_SEPARATOR": ";",
+				"limited_primary_keys_list": null,
+				"specific_skipped_values": [],
+				"stop_on_duplicate_primary_key": true
+			},
+			"table_name": "clients",
+			"table_type": "TT_CLASS",
+			"table_type_parameters": {
+				"table_class_labels": {
+					"en": "Clients",
+					"fr": "Clients"
+				},
+				"table_class_name": "Clients",
+				"table_class_subclass_of": []
+			}
+		}
+	}
+```
 
 Le nom de la table table_name sera utilisé dans les logs. Le type de
 classe utilisé TT_CLASS va définir une table de classe, c'est-à-dire une
@@ -304,21 +195,16 @@ la création de l’ontologie. Ici nous renommerons le champ
 table_class_name de la valeur Clients à *Customer*. Et nous mettrons en
 paramètre table_class_subclass_of la classe *pmcore:Person*.
 
+```
 "table_type_parameters": {
-
-"table_class_labels": {
-
-"en": "Clients",
-
-"fr": "Clients"
-
-},
-
-"table_class_name": "Customer",
-
-"table_class_subclass_of": \[ "pmcore:Person" \]
-
-}
+				"table_class_labels": {
+					"en": "Clients",
+					"fr": "Clients"
+				},
+				"table_class_name": "Customer",
+				"table_class_subclass_of": [ "pmcore:Person" ]
+			}
+```
 
 Dans un premier temps, tous les paramètres liés au type de colonne, à
 l'exception de l’ID du client, seront définis comme des data type
@@ -335,9 +221,9 @@ Une fois les types de colonne définis, nous pouvons lancer l’application
 dans un mode de boucle afin de créer un jeu de questions-réponses qui se
 conclura lorsque l'application aura suffisamment de paramètres pour
 générer l’ontologie et là KB:
-
+```
 prototype.exe --configfile="conf.json" -l
-
+```
 C'est le paramètre *-l* qui lance le mode boucle: durant le mode boucle
 l’application surveille le fichier de configuration et relance une
 analyse chaque fois qu'il est modifié par l’utilisateur. Une fois que
@@ -357,23 +243,21 @@ valeur par défaut donnée en exemple: SAMPLE_COLNAME1 et SAMPLE_COLNAME2.
 Il faut modifier ces deux noms afin d’utiliser les prénoms et non des
 clients comme label des entités.
 
+```
 "column_entities_labels_struct": {
-
-"en": "Label {SAMPLE_COLNAME1} {SAMPLE_COLNAME2}",
-
-"fr": "Label {SAMPLE_COLNAME1} {SAMPLE_COLNAME2}"
-
-}
+						"en": "Label {SAMPLE_COLNAME1} {SAMPLE_COLNAME2}",
+						"fr": "Label {SAMPLE_COLNAME1} {SAMPLE_COLNAME2}"
+					}
+```
 
 Nous utiliserons les colonnes CLIENT_NOM et CLIENT_PRENOM :
 
+```
 "column_entities_labels_struct": {
-
-"en": "{CLIENT_PRENOM} {CLIENT_NOM}",
-
-"fr": "{CLIENT_PRENOM} {CLIENT_NOM}"
-
-}
+						"en": "{CLIENT_PRENOM} {CLIENT_NOM}",
+						"fr": "{CLIENT_PRENOM} {CLIENT_NOM}"
+					}
+```
 
 En procédant ainsi, au moment de la construction de la KB, à chaque
 ligne de la table *clients* sera associée une entité de la classe
@@ -389,116 +273,75 @@ paramètres et quitte le mode boucle.
 
 Pour demander la création du fichier d’ontologie, utiliser le paramètre
 -o
-
+```
 prototype.exe --configfile="conf.json" -o
-
+```
 <img src="./media/image8.png" style="width:4.875in;height:2.54167in" />
 
 Un fichier *minicrm.ttl* a été créé
 
-@prefix : \<http://www.perfect-memory.com/ontology/minicrm/1.1#\> .
+```
+@prefix : <http://www.perfect-memory.com/ontology/minicrm/1.1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmcore: <http://www.perfect-memory.com/ontology/pmcore/1.1#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-@prefix owl: \<http://www.w3.org/2002/07/owl#\> .
+<http://www.perfect-memory.com/ontology/minicrm/1.1> a owl:Ontology ;
+    rdfs:label "MiniCRM"@en,
+        "MiniCRM"@fr ;
+    rdfs:comment "MiniCRM"@en,
+        "MiniCRM"@fr ;
+    owl:imports <http://www.perfect-memory.com/ontology/pmcore/1.1>,
+        <http://www.perfect-memory.com/ontology/pmmodel/1.1> .
 
-@prefix pmcore: \<http://www.perfect-memory.com/ontology/pmcore/1.1#\> .
-
-@prefix rdfs: \<http://www.w3.org/2000/01/rdf-schema#\> .
-
-@prefix xsd: \<http://www.w3.org/2001/XMLSchema#\> .
-
-\<http://www.perfect-memory.com/ontology/minicrm/1.1\> a owl:Ontology ;
-
-rdfs:label "MiniCRM"@en,
-
-"MiniCRM"@fr ;
-
-rdfs:comment "MiniCRM"@en,
-
-"MiniCRM"@fr ;
-
-owl:imports \<http://www.perfect-memory.com/ontology/pmcore/1.1\>,
-
-\<http://www.perfect-memory.com/ontology/pmmodel/1.1\> .
-
-:has_client_a\_prospecter a owl:DatatypeProperty,
-
-owl:FunctionalProperty ;
-
-rdfs:label "has_client_a\_prospecter"@en,
-
-"has_client_a\_prospecter"@fr ;
-
-rdfs:domain :Customer ;
-
-rdfs:range xsd:boolean .
+:has_client_a_prospecter a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "has_client_a_prospecter"@en,
+        "has_client_a_prospecter"@fr ;
+    rdfs:domain :Customer ;
+    rdfs:range xsd:boolean .
 
 :has_client_fonction a owl:DatatypeProperty,
-
-owl:FunctionalProperty ;
-
-rdfs:label "has_client_fonction"@en,
-
-"has_client_fonction"@fr ;
-
-rdfs:domain :Customer ;
-
-rdfs:range xsd:string .
+        owl:FunctionalProperty ;
+    rdfs:label "has_client_fonction"@en,
+        "has_client_fonction"@fr ;
+    rdfs:domain :Customer ;
+    rdfs:range xsd:string .
 
 :has_client_genre a owl:DatatypeProperty,
-
-owl:FunctionalProperty ;
-
-rdfs:label "has_client_genre"@en,
-
-"has_client_genre"@fr ;
-
-rdfs:domain :Customer ;
-
-rdfs:range xsd:string .
+        owl:FunctionalProperty ;
+    rdfs:label "has_client_genre"@en,
+        "has_client_genre"@fr ;
+    rdfs:domain :Customer ;
+    rdfs:range xsd:string .
 
 :has_client_nom a owl:DatatypeProperty,
-
-owl:FunctionalProperty ;
-
-rdfs:label "has_client_nom"@en,
-
-"has_client_nom"@fr ;
-
-rdfs:domain :Customer ;
-
-rdfs:range xsd:string .
+        owl:FunctionalProperty ;
+    rdfs:label "has_client_nom"@en,
+        "has_client_nom"@fr ;
+    rdfs:domain :Customer ;
+    rdfs:range xsd:string .
 
 :has_client_prenom a owl:DatatypeProperty,
-
-owl:FunctionalProperty ;
-
-rdfs:label "has_client_prenom"@en,
-
-"has_client_prenom"@fr ;
-
-rdfs:domain :Customer ;
-
-rdfs:range xsd:string .
+        owl:FunctionalProperty ;
+    rdfs:label "has_client_prenom"@en,
+        "has_client_prenom"@fr ;
+    rdfs:domain :Customer ;
+    rdfs:range xsd:string .
 
 :has_client_societe_id a owl:DatatypeProperty,
-
-owl:FunctionalProperty ;
-
-rdfs:label "has_client_societe_id"@en,
-
-"has_client_societe_id"@fr ;
-
-rdfs:domain :Customer ;
-
-rdfs:range xsd:integer .
+        owl:FunctionalProperty ;
+    rdfs:label "has_client_societe_id"@en,
+        "has_client_societe_id"@fr ;
+    rdfs:domain :Customer ;
+    rdfs:range xsd:integer .
 
 :Customer a owl:Class ;
-
-rdfs:label "Clients"@en,
-
-"Clients"@fr ;
-
-rdfs:subClassOf pmcore:Person .
+    rdfs:label "Clients"@en,
+        "Clients"@fr ;
+    rdfs:subClassOf pmcore:Person .
+```
 
 # Pour aller plus loin
 
@@ -563,16 +406,18 @@ porperty aux entités de la table « Customer ».
 Regénérons l’ontologie avec l’option -o et observons les modifications
 dans le fichier turtle
 
-:Position a owl:Class ;  
-rdfs:label "Position"@en,  
-"Position"@fr.
+```
+:Position a owl:Class ;
+    rdfs:label "Position"@en,
+        "Position"@fr.
+:has_clientFonction a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "clientFonction"@en,
+        "clientFonction"@fr ;
+    rdfs:domain :Customer ;
+    rdfs:range :Position .
+```
 
-:has_clientFonction a owl:FunctionalProperty,  
-owl:ObjectProperty ;  
-rdfs:label "clientFonction"@en,  
-"clientFonction"@fr ;  
-rdfs:domain :Customer ;  
-rdfs:range :Position .
 
 On voit que les liens sont correctement créés entre les classes Customer
 et Position : « Position » est une classe à part entière et
@@ -582,22 +427,24 @@ classe Customer à une entité de la classe Position.
 Observons l’impact de cette modification sur l’entête du fichier de
 configuration : jusque-là la section additional_classes était vide elle
 contient maintenant un élément :
-
-"additional_classes": {  
-"Position": {  
-"ac_labels": {  
-"en": "Position",  
-"fr": "Position"  
-},  
-"ac_subclass_of": \[\]  
-}  
-}
+```
+"additional_classes": {
+		"Position": {
+			"ac_labels": {
+				"en": "Position",
+				"fr": "Position"
+			},
+			"ac_subclass_of": []
+		}
+	}
+```
 
 Les trois sections
-
+```
 "additional_classes": {},  
 "additional_datatypes_properties": {},  
 "additional_object_properties": {},
+```
 
 Contiennent les classes et relations additionnelles aux tables : si
 chaque table ne renseigne qu’une seule classe alors ces sections
@@ -608,13 +455,13 @@ additional_classes où il sera possible de paramétrer son label
 (attention pas les labels des entités mais celui de la classe) ainsi que
 ses relations de parentés. Nous pourrions ici attribuer des classes
 parentes comme « pmcore :Entity » :
-
-"ac_subclass_of": \["pmcore: Entity"\]
-
+```
+"ac_subclass_of": ["pmcore: Entity"]
+```
 Si on souhaite plusieurs parents, les lister séparés d’une virgule :
-
-"ac_subclass_of": \["pmcore: Entity", "schema:Occupation"\]
-
+```
+"ac_subclass_of": ["pmcore: Entity", "schema:Occupation"]
+```
 Point important sur le nom de la classe :
 
 Définir une target_class_name dans une colonne d’une table provoque la
